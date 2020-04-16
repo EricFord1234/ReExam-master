@@ -1,4 +1,4 @@
-# a-new-hope
+
 // Testing testing
 
 *SoulWire Description: the Soulwire sketch example is a javascript code that uses multiple lines to create designs. It lets you make changes in the menu bar, including (min side length, min angle(rad), iterations, randomness, and opposite sides). These features let you make a different sketch as many times as you want which is very unique. In the menu bar you can also start/stop the process, reset polygons, clear canvas and save. This sketch is very unique because of this aspect of creating new sketches with changes you can make.  
