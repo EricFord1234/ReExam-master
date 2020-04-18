@@ -39,9 +39,9 @@
                 console.log( 'setup' );
             },
             
-            // Here I changed the thickness of the stroke
+            // Here I changed the thickness of the stroke and the length between the dots depending on speed.
             update: function() {
-                radius = 2 + abs( sin( this.millis * 0.001 ) * 50 );
+                radius = 2 + abs( sin( this.millis * 0.002 ) * 50 );
             },
 
             // Event handlers - if the space bar is pressed the canvas is cleared
