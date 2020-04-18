@@ -1,7 +1,6 @@
-# a-new-hope
 // Testing testing
 
-*SoulWire Description: the Soulwire sketch example is a javascript code that uses multiple lines to create designs. It lets you make changes in the menu bar, including (min side length, min angle(rad), iterations, randomness, and opposite sides). These features let you make a different sketch as many times as you want which is very unique. In the menu bar you can also start/stop the process, reset polygons, clear canvas and save. This sketch is very unique because of this aspect of creating new sketches with changes you can make.  
+*Crystallisation Description: the Crystallisation sketch example is a javascript code that uses multiple lines to create designs. It lets you make changes in the menu bar, including (min side length, min angle(rad), iterations, randomness, and opposite sides). These features let you make a different sketch as many times as you want which is very unique. In the menu bar you can also start/stop the process, reset polygons, clear canvas and save. This sketch is very unique because of this aspect of creating new sketches with changes you can make.  
 
 What the project does:
 *The project create lines based on the numbers of the main functions in the main menu. Those functions are iterations, angles, and lines. with those you can create new sketches every time a change is made 
