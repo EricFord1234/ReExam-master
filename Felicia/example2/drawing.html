@@ -25,7 +25,8 @@
         <script src="/felicia/example2/sketch.js"></script>
         <script>
 
-        var COLOURS = [ '#E3EB64', '#A7EBCA', '#FFFFFF', '#D8EBA7', '#868E80' ];
+                //I changed the opacity of the pencil colour to create dimensions.
+        var COLOURS = [ 'rgba(255,255,255,0.5)', '#A7EBCA', '#FFFFFF', '#D8EBA7', '#868E80' ];
         var radius = 0;
 
         Sketch.create({
@@ -40,7 +41,7 @@
             
             // Here I changed the thickness of the stroke
             update: function() {
-                radius = 2 + abs( sin( this.millis * 0.003 ) * 20 );
+                radius = 2 + abs( sin( this.millis * 0.001 ) * 50 );
             },
 
             // Event handlers - if the space bar is pressed the canvas is cleared
@@ -61,8 +62,8 @@
 
                     touch = this.touches[i];
                         //Here I changed the cursor style from round to square
-                    this.lineCap = 'square';
-                    this.lineJoin = 'square';
+                    this.lineCap = 'round';
+                    this.lineJoin = 'round';
                     this.fillStyle = this.strokeStyle = COLOURS[ i % COLOURS.length ];
                     this.lineWidth = radius;
 
