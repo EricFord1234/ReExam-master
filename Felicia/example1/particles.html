@@ -127,6 +127,7 @@
             particles.push( particle );
         };
 
+        //Here is a good example of using a statement within a loop within a function
         demo.update = function() {
 
             var i, particle;
@@ -140,9 +141,11 @@
             }
         };
 
+        /* Here I changed the style of the dots from having an opacity to complete coverage by changing the
+        demo.globalCompositeOperation from lighter to heavier */
         demo.draw = function() {
 
-            demo.globalCompositeOperation  = 'lighter';
+            demo.globalCompositeOperation  = 'heavier';
 
             for ( var i = particles.length - 1; i >= 0; i-- ) {
                 particles[i].draw( demo );
