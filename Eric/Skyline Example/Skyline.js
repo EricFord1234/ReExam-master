@@ -4,7 +4,7 @@
     SPDX-License-Identifier: Apache-2.0
    */
 
-   //Setting up variables 
+   //variable specific 
    var m=this||self,n=function(a,b){a=a.split(".");
    var c=m;a[0]in c||"undefined"==typeof c.execScript||c.execScript("var "+a[0]);
    for(var d;a.length&&(d=a.shift());)a.length||void 0===b?c=c[d]&&c[d]!==Object.prototype[d]?c[d]:c[d]={}:c[d]=b};
@@ -15,7 +15,7 @@
    var w={},x=function(){w.TAGGING=w.TAGGING||[];w.TAGGING[1]=!0};
    var y=/:[0-9]+$/,A=function(a,b){b&&(b=String(b).toLowerCase());
    
-   //creating break functions for case variables 
+   //break functions for case variables 
    if("protocol"===b||"port"===b)a.protocol=z(a.protocol)||z(r.location.protocol);"port"===b?a.port=String(Number(a.hostname?a.port:r.location.port)||("http"==a.protocol?80:"https"==a.protocol?443:"")):"host"===b&&(a.hostname=(a.hostname||r.location.hostname).replace(y,"").toLowerCase());
    var c=z(a.protocol);b&&(b=String(b).toLowerCase());
    switch(b){case "url_no_fragment":b="";a&&a.href&&(b=a.href.indexOf("#"),b=0>b?a.href:a.href.substr(0,
@@ -30,7 +30,7 @@
    return a},z=function(a){return a?a.replace(":","").toLowerCase():""},B=function(a){var b=t.createElement("a");a&&(b.href=a);var c=b.pathname;"/"!==c[0]&&(a||x(),c="/"+c);a=b.hostname.replace(y,"");
    return{href:b.href,protocol:b.protocol,host:b.host,hostname:a,pathname:c,search:b.search,hash:b.hash,port:b.port}};function C()
    
-   //linking elements like (.fromCharCode, .hasOwnProperty, .toUpperCase, .toLowerCase)
+   //adding elements like (.fromCharCode, .hasOwnProperty, .toUpperCase, .toLowerCase)
    {for(var a=D,b={},c=0;c<a.length;++c)b[a[c]]=c;return b}function E()
    {var a="ABCDEFGHIJKLMNOPQRSTUVWXYZ";a+=a.toLowerCase()+"0123456789-_";return a+"."}var D,F;
    function G(a){D=D||E();F=F||C();for(var b=[],c=0;c<a.length;c+=3){var d=c+1<a.length,f=c+2<a.length,e=a.charCodeAt(c),g=d?a.charCodeAt(c+1):0,h=f?a.charCodeAt(c+2):0,k=e>>2;e=(e&3)<<4|g>>4;g=(g&15)<<2|h>>6;h&=63;f||(h=64,d||(g=64));b.push(D[k],D[e],D[g],D[h])}return b.join("")}
@@ -54,7 +54,7 @@
     SPDX-License-Identifier: Apache-2.0
    */
    
-   //
+   //setting up functions 
    var $c=function(a){this.w=a||[]};
    $c.prototype.set=function(a)
    {this.w[a]=!0};$c.prototype.encode=function()
@@ -63,7 +63,7 @@
     for(b=0;b<a.length;b++)a[b]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".charAt(a[b]||0);
     return a.join("")+"~"};
     
-    //Connecting google analytics 
+    //google analytics set up
     var ha=window.GoogleAnalyticsObject,wa;
     if(wa=void 0!=ha)wa=-1<(ha.constructor+"").indexOf("String");
     var Qa;
@@ -85,7 +85,7 @@
     {for(var a=O.navigator.userAgent+(M.cookie?M.cookie:"")+(M.referrer?M.referrer:""),b=a.length,c=O.history.length;0<c;)a+=c--^b++;
     return[hd()^La(a)&2147483647,Math.round((new Date).getTime()/1E3)].join(".")},ta=function(a)
     
-    //Adding Skyline Image
+    //Skyline Image specifics 
     {var b=M.createElement("img");b.width=10;b.height=10;b.src=a;
     return b},ua=function(){},K=function(a){if(encodeURIComponent instanceof Function)
     return encodeURIComponent(a);J(28);
@@ -105,7 +105,7 @@
     break}else e<a.length&&(c[a[e]]=b[e]);
     return c};
     
-    //Creating prototype function 
+    //prototype function 
     var ee=function(){this.keys=[];
     this.values={};
     this.m={}};ee.prototype.set=function(a,b,c){this.keys.push(a);c?this.m[":"+a]=b:this.values[":"+a]=b};ee.prototype.get=function(a)
@@ -115,7 +115,7 @@
     if(b&&b.ioo&&b.ioo()||a&&!0===F["ga-disable-"+a])return!0;
     try{var c=F.external;
 
-    //Setting user preferences 
+    //user preferences 
     if(c&&c._gaUserPrefs&&"oo"==c._gaUserPrefs)
     return!0}catch(g){}a=[];b=String(Ea.cookie||document.cookie).split(";");
     for(c=0;c<b.length;c++){var d=b[c].split("="),e=d[0].replace(/^\s*|\s*$/g,"");e&&"AMP_TOKEN"==e&&((d=d.slice(1).join("=").replace(/^\s*|\s*$/g,""))&&(d=decodeURIComponent(d)),a.push(d))}
@@ -128,7 +128,7 @@
     if(b==a[d]){d=!0;break a}d=!1}
     return d},Cc=function(a)
     
-    //Adding Encode and decode URIComponent 
+    //Decode and Encode URIComponent 
     {return encodeURIComponent?encodeURIComponent(a).replace(/\(/g,"%28").replace(/\)/g,"%29"):a},vc=/^(www\.)?google(\.com?)?(\.[a-z]{2})?$/,eb=/(^|\.)doubleclick\.net$/i;var oc,Id=/^.*Version\/?(\d+)[^\d].*$/i,ne=function()
     {if(void 0!==O.__ga4__)return O.__ga4__;
     if(void 0===oc){var a=O.navigator.userAgent;
@@ -157,7 +157,7 @@
     if(zc("AMP_TOKEN",encodeURIComponent(a),"/",e,"",b)){fb=e;return}}}zc("AMP_TOKEN",encodeURIComponent(a),"/",fb,"",b)},Qc=function(a,b,c){Ga&&clearTimeout(Ga);b&&xc(b,c);Ab=a;b=Ub;Ub=[];
     for(c=0;c<b.length;c++)b[c](a)},ye=function(a){a:{if(ja.test(M.referrer)){var b=M.location.hostname.replace(Ue,"");b:
     
-    //setting referrer
+    //referrer set up
     {var c=M.referrer;c=c.replace(/^https?:\/\//,"");
     var d=c.replace(/^[^/]+/,"").split("/"),e=d[2];d=(d="s"==e?d[3]:e)?decodeURIComponent(d):d;
     if(!d){if(0==c.indexOf("xn--")){c="";
@@ -170,7 +170,7 @@
    d){var e=O.XMLHttpRequest;if(!e)return!1;var g=new e;
     if(!("withCredentials"in g))return!1;a=a.replace(/^http:/,"https:");g.open("POST",a,!0);g.withCredentials=!0;g.setRequestHeader("Content-Type","text/plain");g.onreadystatechange=function()
     
-    //Setting readyState
+    //readyState set up 
     {if(4==g.readyState){if(d)try{var ca=g.responseText;
     if(1>ca.length)ge("xhr","ver","0"),c();
     else if("1"!=ca.charAt(0))ge("xhr","ver",String(ca.length)),c();
@@ -186,7 +186,7 @@
    function Pa(a){try{O.navigator.sendBeacon?J(42):O.XMLHttpRequest&&"withCredentials"in new O.XMLHttpRequest&&J(40)}catch(c){}a.set(ld,Td(a),!0);a.set(Ac,R(a,Ac)+1);var b=[];ue.map(function(c,d){d.F&&(c=a.get(c),void 0!=c&&c!=d.defaultValue&&("boolean"==typeof c&&(c*=1),b.push(d.F+"="+K(""+c))))});!1===a.get(xe)&&b.push("npa=1");b.push("z="+Bd());a.set(Ra,b.join("&"),!0)}
    function Sa(a)
    
-   //Setting skyline parameters and iterations 
+   //skyline parameters and iterations set up 
    {var b=P(a,fa);!b&&a.get(Vd)&&(b="beacon");var c=P(a,gd),d=P(a,oe),e=c||(d?d+"/3":bd(!1)+"/collect");switch(P(a,ad)){case "d":e=c||(d?d+"/32":bd(!1)+"/j/collect");b=a.get(qe)||void 0;pe(e,P(a,Ra),b,a.Z(Ia));break;case "b":e=c||(d?d+"/31":bd(!1)+"/r/collect");default:b?(c=P(a,Ra),d=(d=a.Z(Ia))||ua,"image"==b?wc(e,c,d):"xhr"==b&&wd(e,c,d)||"beacon"==b&&x(e,c,d)||ba(e,c,d)):ba(e,P(a,Ra),a.Z(Ia))}e=P(a,Na);e=h(e);b=e.hitcount;e.hitcount=b?b+1:1;e=P(a,Na);delete h(e).pending_experiments;
    a.set(Ia,ua,!0)}function Hc(a){qc().expId&&a.set(Nc,qc().expId);qc().expVar&&a.set(Oc,qc().expVar);var b=P(a,Na);if(b=h(b).pending_experiments){var c=[];for(d in b)b.hasOwnProperty(d)&&b[d]&&c.push(encodeURIComponent(d)+"."+encodeURIComponent(b[d]));var d=c.join("!")}else d=void 0;d&&a.set(m,d,!0)}function cd(){if(O.navigator&&"preview"==O.navigator.loadPurpose)throw"abort";}function yd(a){var b=O.gaDevIds;ka(b)&&0!=b.length&&a.set("&did",b.join(","),!0)}
    function vb(a){if(!a.get(Na))throw"abort";};var hd=function(){return Math.round(2147483647*Math.random())},Bd=function(){try{var a=new Uint32Array(1);O.crypto.getRandomValues(a);return a[0]&2147483647}catch(b){return hd()}};function Ta(a){var b=R(a,Ua);500<=b&&J(15);var c=P(a,Va);if("transaction"!=c&&"item"!=c){c=R(a,Wa);var d=(new Date).getTime(),e=R(a,Xa);0==e&&a.set(Xa,d);e=Math.round(2*(d-e)/1E3);0<e&&(c=Math.min(c+e,20),a.set(Xa,d));if(0>=c)throw"abort";a.set(Wa,--c)}a.set(Ua,++b)};var Ya=function(){this.data=new ee};Ya.prototype.get=function(a){var b=$a(a),c=this.data.get(a);b&&void 0==c&&(c=ea(b.defaultValue)?b.defaultValue():b.defaultValue);return b&&b.Z?b.Z(this,a,c):c};var P=function(a,b){a=a.get(b);return void 0==a?"":""+a},R=function(a,b){a=a.get(b);return void 0==a||""===a?0:Number(a)};Ya.prototype.Z=function(a){return(a=this.get(a))&&ea(a)?a:ua};
