@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ReExam-Master
-=======
-# a-new-hope
->>>>>>> parent of ade04ff... change
 // Testing testing
 
 Skyline project description: 
