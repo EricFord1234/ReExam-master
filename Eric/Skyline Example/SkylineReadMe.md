@@ -1,8 +1,8 @@
-# a-new-hope
+# ReExam-Master
 // Testing testing
 
 Skyline project description: 
-*This sketch js project was a moving skyline which moved up and down coordinated with the movement of the mouse. The sketch had 3 different layers of building with all different shapes. during this project i tried my best to maked as many changes as possible to change the style. 
+*This sketch js project was a moving skyline which moved up and down coordinated with the movement of the mouse. The sketch had 3 different layers of building with all different shapes. during this project i tried my best to make as many changes as possible to change the style. 
 
 What the project does:
 *As stated above, moving the mouse up and down coorilates causing the skyline to show the different layers of the building. By doing this, it gives it a 3d effect in a way which is unique. 
