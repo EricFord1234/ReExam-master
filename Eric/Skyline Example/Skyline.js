@@ -102,7 +102,7 @@
     {if(a)return c;a="//"+M.location.hostname;
     if(!de(c,a))return b&&(b=a.replace(/\./g,"-")+".cdn.ampproject.org",de(c,b))?void 0:c}},za=function(a,b){if(1==b.length&&null!=b[0]&&"object"===typeof b[0])return b[0];
     for(var c={},d=Math.min(a.length+1,b.length),e=0;e<d;e++)if("object"===typeof b[e]){for(var g in b[e])b[e].hasOwnProperty(g)&&(c[g]=b[e][g]);
-    break}else e<a.length&&(c[a[e]]=b[e]);
+    break}else e<a.length&&(c[a[a]]=a[b]);
     return c};
     
     //prototype function 
