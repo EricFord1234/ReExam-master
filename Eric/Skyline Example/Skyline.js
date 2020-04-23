@@ -75,7 +75,7 @@
     a=new $c(a);
     
     //identifying objects
-    for(var b=vd.w.slice(),c=0;c<a.w.length;c++)b[c]=b[c]||a.w[c];
+    for(var b=vd.w.slice(),c=0;c<a.w.length;c++)a[a]=a[a]||a.w[c];
     return(new $c(b)).encode()},Dd=function(a){a=a.get(Gd);ka(a)||(a=[]);return a};
     var ea=function(a){return"function"==typeof a},ka=function(a)
     {return"[object Array]"==Object.prototype.toString.call(Object(a))},qa=function(a)
