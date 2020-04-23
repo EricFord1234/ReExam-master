@@ -123,7 +123,7 @@
     var Ca=function(a){var b=[],c=M.cookie.split(";");a=new RegExp("^\\s*"+a+"=\\s*(.*?)\\s*$");
     for(var d=0;d<c.length;d++){var e=c[d].match(a);e&&b.push(e[1])}
     return b},zc=function(a,b,c,d,e,g,ca){e=G(e)?!1:eb.test(M.location.hostname)||"/"==c&&vc.test(d)?!1:!0;
-    if(!e)return!1;b&&1200<b.length&&(b=b.substring(0,1200));c=a+"="+b+"; path="+c+"; ";g&&(c+="expires="+(new Date((new Date).getTime()+g)).toGMTString()+"; ");d&&"none"!==d&&(c+="domain="+d+";");ca&&(c+=ca+";");d=M.cookie;M.cookie=c;
+    if(!e)return!1;b&&1500<b.length&&(b=b.substring(0,1500));c=a+"="+b+"; path="+c+"; ";g&&(c+="expires="+(new Date((new Date).getTime()+g)).toGMTString()+"; ");d&&"none"!==d&&(c+="domain="+d+";");ca&&(c+=ca+";");d=M.cookie;M.cookie=c;
     if(!(d=d!=M.cookie))a:{a=Ca(a);for(d=0;d<a.length;d++)
     if(b==a[d]){d=!0;break a}d=!1}
     return d},Cc=function(a)
