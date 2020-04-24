@@ -1,4 +1,4 @@
-This first example focuses on the sketch.js parallax mountains.
+This first example focuses on the sketch.js parallax mountains. link . https://codepen.io/jackrugile/full/Apfyn
 
 
 Parallax Mountains Description: *This project showcases how one can make use of sketchJS to link mouse movement with animations by rendering randomly generated mountains with sketchJS.
@@ -12,4 +12,4 @@ Why the project is useful: *This project is useful because it's a good entry-poi
 How users can get started with the project: *One can get started with this project by changing the codepen editor view to locate the CoffeeScript code. Once done, you can scroll down past the settings functions onto the sketch.setup = function() while decremental loop. Modifying these easily labelled values will help you change the amplitude of the mountains etc. Altering the sketch.setup values will modify the shape of the curves from very mountainous to smooth like the Win XP background grass meadows.
 
 
-Who maintains and contributes to the project: *Courtesy of Jack Rugile, link : jackrugile.com
+Who maintains and contributes to the project: *Courtesy of Jack Rugile, link : http://www.jackrugile.com
