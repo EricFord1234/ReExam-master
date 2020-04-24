@@ -73,3 +73,5 @@ sketch.update = ->
 sketch.draw = ->  
   i = particles.length
   particles[ i ].render() while i--
+
+    
