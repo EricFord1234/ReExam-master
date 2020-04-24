@@ -14,7 +14,5 @@ The project is useful as an easy introduction to creating quick animation loops 
 * To get started with the project begin with reading *How to get started guide* and get acquainted with the basic methods when playing around with code. To download the full source, visit https://soulwire.github.io/sketch.js/ and press DOWNLOAD for a zip-file containing the full source and some examples to get you started.
 
 ## Who maintains and contributes to the project:
-* Justin Windle maintains and contributes to this project, http://soulwire.co.uk
+* Justin Windle maintains and contributes to this project, http://soulwire.co.uk, Eric Ford, Felicia Del Treppo, Christophe Berbec, Aaric Peterson contributed to the project. 
 
-
-# Reflections on the project
