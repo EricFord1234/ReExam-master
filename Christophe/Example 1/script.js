@@ -124,8 +124,8 @@
       results.push(mountainRanges.push(new MountainRange({
         layer: i + 1,
         width: {
-          min: (i + 1) * 50,
-          max: (i + 1) * 70
+          min: (i + 1) * 10,
+          max: (i + 1) * 30
         },
         height: {
           min: 200 - (i * 40),
